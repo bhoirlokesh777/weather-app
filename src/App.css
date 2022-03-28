@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+}
+.m-0{
+  margin: 0;
+}
+.input-group label{
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+}
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+input[type=text]:focus-visible {
+  outline: 1px solid #4CAF50;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* .button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+} */
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.app-container{
+  padding: 20px;
+}
+.app-container .cityList > span{
+  padding: 10px;
+  min-width: 100px;
+  display: inline-block;
+  border: 1px solid #f0f7ff;
+}
+.app-container .cityList .cityName{
+  min-width: 150px;
+}
+.app-container .cityList > span:last-child{
+  min-width: 190px;
+}
+.bold-600{
+  font-weight: 600;
+}
+.app-sub-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.app-sub-container > div{
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cityName, .deletBtn, .showDetail{
+  cursor: pointer;
+}
+.deletBtn{
+  color: red;
+  text-decoration: underline;
+}
+.showDetail{
+  color: blueviolet;
+  text-decoration: underline;
+}
+.suggested_city_list, .current-temp{
+  display: flex;
+  gap: 15px;
+}
+.suggested_city_list{
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.suggestedList, .input-group{
+  text-align: center;
+}
+.app-container-right{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .app-sub-container{
+    flex-direction: column;
+  }
+  .app-container-right{
+    width: 100%;
+  }
+  .cityList {
+    display: flex;
+  }
+  .cityList > span > span{
+    width: 100%;
+    display: inline-block;
+  }
+}
